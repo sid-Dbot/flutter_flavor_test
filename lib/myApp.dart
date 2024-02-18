@@ -14,7 +14,7 @@ class Homepage extends StatelessWidget {
       appBar: AppBar(
         title: Text(appConfig.appName),
       ),
-      body: Container(),
+      body: Center(child: Text(appConfig.uri)),
     );
   }
 }
