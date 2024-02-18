@@ -14,7 +14,23 @@ class Homepage extends StatelessWidget {
       appBar: AppBar(
         title: Text(appConfig.appName),
       ),
-      body: Center(child: Text(appConfig.uri)),
+      body: Column(
+        children: [
+          Center(child: Text(appConfig.uri)),
+          SizedBox.square(
+            dimension: 200,
+            child: TextFormField(
+              maxLines: 4,
+              // onFieldSubmitted: (value) => addTodo(),
+              // controller: titleController,
+              decoration: const InputDecoration(
+                  border: OutlineInputBorder(gapPadding: 0),
+                  // label: const Text('Todo title'),
+                  hintText: 'Develop amazing app '),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
