@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_flavor_test/appConfig.dart';
 
 class Homepage extends StatelessWidget {
-  String title;
+  AppConfig appConfig;
 
   Homepage({
-    required this.title,
+    required this.appConfig,
   });
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: Text(appConfig.appName),
       ),
       body: Container(),
     );
