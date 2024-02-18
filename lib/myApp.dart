@@ -15,18 +15,25 @@ class Homepage extends StatelessWidget {
         title: Text(appConfig.appName),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Center(child: Text(appConfig.uri)),
-          SizedBox.square(
-            dimension: 200,
-            child: TextFormField(
-              maxLines: 4,
-              // onFieldSubmitted: (value) => addTodo(),
-              // controller: titleController,
-              decoration: const InputDecoration(
-                  border: OutlineInputBorder(gapPadding: 0),
-                  // label: const Text('Todo title'),
-                  hintText: 'Develop amazing app '),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Center(child: Text(appConfig.uri)),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SizedBox.square(
+              dimension: 200,
+              child: TextFormField(
+                maxLines: 4,
+                // onFieldSubmitted: (value) => addTodo(),
+                // controller: titleController,
+                decoration: const InputDecoration(
+                    border: OutlineInputBorder(gapPadding: 0),
+                    // label: const Text('Todo title'),
+                    hintText: 'Develop amazing app '),
+              ),
             ),
           ),
         ],
