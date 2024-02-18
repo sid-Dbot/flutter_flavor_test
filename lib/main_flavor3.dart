@@ -3,8 +3,10 @@ import 'package:flutter_flavor_test/appConfig.dart';
 import 'package:flutter_flavor_test/myApp.dart';
 
 void main() {
-  AppConfig app =
-      AppConfig(flavor: 'Flavor 3', appName: 'Flavor 3', uri: 'asdasff');
+  AppConfig app = AppConfig(
+      flavor: 'Flavor 3',
+      appName: 'Flavor 3',
+      uri: 'https://dummy.restapiexample.com/api/v1/employees');
   runApp(MyApp(
     appConfig: app,
   ));
